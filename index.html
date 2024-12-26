@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Strike Rate</title>
+
+    <!-- CSS -->
+     <link rel="stylesheet" href="style.css">
+     <!-- Bootstrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+<!-- Strike Rate Section starts -->
+    <div class="strikeratesection">
+        <div class="content">
+            <h3 class="py-3">Calculate Strike Rate Here.</h3>
+            <div class="inputArea">
+                <div class="run">
+                    <input id="runs" type="text" placeholder="Enter Runs" class="border border-warning-subtle">
+                </div>
+                <div class="ball">
+                    <input id="balls" type="text" placeholder="Enter Balls" class="border border-warning-subtle">
+                </div>
+                <button onclick=strikeRate() class=" btn btn-info">Calculate</button>
+            </div>
+            <div class="outputArea">
+                <p id="output" class="p-4">His strike rate is <span id="strikerate"></span></p>
+            </div>
+        </div>
+    </div>
+<!-- Strike Rate Section ends -->
+
+<!-- Count Pairs find out starts -->
+    <div class="strikeratesection">
+        <div class="content">
+            <h3 class="py-3">Count Pairs of String & Even number.</h3>
+            <div class="inputArea">
+                <!-- <div class="run">
+                    <input id="runs" type="text" placeholder="Enter Runs" class="border border-warning-subtle">
+                </div> -->
+                <div class="ball w-75">
+                    <input class="w-100 border" id="pairs" type="text" placeholder="Enter string & number pairs" class="border border-warning-subtle">
+                </div>
+                <button onclick= "paircount()" class=" btn btn-info">Count</button>
+            </div>
+            <div class="outputArea">
+                <p id="output" class="p-4">Here String & Even numbers are <span id="resultOfCount" style="font-weight: bolder; color: rgb(0, 0, 0);"></span> pairs.</p>
+            </div>
+        </div>
+    </div>
+<!-- Count Pairs find out ends -->
+
+
+    
+    
+    <!-- JS -->
+     <script src="strikeRate.js" type="text/javascript"></script>
+
+     <script src="countPairs.js" type="text/javascript"></script>
+</body>
+</html>
